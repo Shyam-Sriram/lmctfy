@@ -62,24 +62,24 @@
   .eyebrow {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.68rem;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.2em;
     color: var(--accent);
     text-transform: uppercase;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.7rem;
   }
 
   h1 {
     font-family: 'Instrument Serif', serif;
     font-size: clamp(2.4rem, 7vw, 3.8rem);
     line-height: 1.1;
-    background: linear-gradient(135deg, #fff 30%, var(--accent2) 100%);
+    background: linear-gradient(13deg, #fff 30%, var(--accent2) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .tagline {
-    margin-top: 0.75rem;
+    margin-top: 0.7rem;
     color: var(--muted);
     font-size: 0.9rem;
     font-style: italic;
@@ -89,16 +89,16 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 1.rem;
     width: 100%;
   }
 
   .input-card label {
     display: block;
     font-size: 0.72rem;
-    font-weight: 500;
+    font-weight: 00;
     color: var(--muted);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.7rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-family: 'IBM Plex Mono', monospace;
@@ -127,13 +127,13 @@
   .generate-btn {
     margin-top: 1rem;
     width: 100%;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    background: linear-gradient(13deg, var(--accent), var(--accent2));
     border: none;
     border-radius: 10px;
-    padding: 0.85rem 1.5rem;
+    padding: 0.8rem 1.rem;
     color: #0a0a0f;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 700;
     cursor: pointer;
     transition: opacity 0.2s, transform 0.1s;
@@ -164,7 +164,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--border);
   }
@@ -172,19 +172,19 @@
   .demo-logo {
     font-family: 'Instrument Serif', serif;
     font-size: 1.4rem;
-    background: linear-gradient(135deg, #fff 30%, var(--accent2));
+    background: linear-gradient(13deg, #fff 30%, var(--accent2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  .share-row { display: flex; gap: 0.5rem; align-items: center; }
+  .share-row { display: flex; gap: 0.rem; align-items: center; }
 
   .share-url-box {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 0.45rem 0.75rem;
+    padding: 0.4rem 0.7rem;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.68rem;
     color: var(--muted);
@@ -201,7 +201,7 @@
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 0.45rem 0.9rem;
+    padding: 0.4rem 0.9rem;
     color: var(--text);
     font-size: 0.8rem;
     cursor: pointer;
@@ -209,19 +209,19 @@
     transition: border-color 0.2s, background 0.2s;
   }
   .copy-btn:hover { border-color: var(--accent); background: var(--glow); }
-  .copy-btn.copied { border-color: #22c55e; color: #22c55e; }
+  .copy-btn.copied { border-color: #22ce; color: #22ce; }
 
   .snark-banner {
-    background: linear-gradient(135deg, rgba(217,119,6,0.08), rgba(245,158,11,0.03));
+    background: linear-gradient(13deg, rgba(217,119,6,0.08), rgba(24,18,11,0.03));
     border: 1px solid rgba(217,119,6,0.2);
     border-radius: 12px;
-    padding: 0.85rem 1.2rem;
-    margin-bottom: 1.25rem;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1.2rem;
     font-size: 0.88rem;
     color: var(--accent2);
     font-style: italic;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.;
   }
 
   /* Chat window */
@@ -236,15 +236,15 @@
   .chat-topbar {
     background: var(--bg);
     border-bottom: 1px solid var(--border);
-    padding: 0.85rem 1.25rem;
+    padding: 0.8rem 1.2rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.7rem;
   }
 
   .traffic-lights { display: flex; gap: 6px; }
-  .dot { width: 12px; height: 12px; border-radius: 50%; }
-  .dot-red   { background: #ff5f57; }
+  .dot { width: 12px; height: 12px; border-radius: 0%; }
+  .dot-red   { background: #fff7; }
   .dot-yellow{ background: #febc2e; }
   .dot-green { background: #28c840; }
 
@@ -255,34 +255,34 @@
   }
 
   .chat-messages {
-    padding: 1.5rem;
+    padding: 1.rem;
     min-height: 80px;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.2rem;
   }
 
   .msg {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.7rem;
     align-items: flex-start;
     opacity: 0;
     transform: translateY(8px);
-    transition: opacity 0.35s ease, transform 0.35s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
   .msg.visible { opacity: 1; transform: translateY(0); }
   .msg.user { flex-direction: row-reverse; }
 
   .avatar {
     width: 32px; height: 32px;
-    border-radius: 50%;
+    border-radius: 0%;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
   }
-  .user-av  { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; font-size: 0.75rem; }
+  .user-av  { background: linear-gradient(13deg, #6366f1, #8bcf6); color: white; font-size: 0.75rem; }
   .claude-av { background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #0a0a0f; font-family: 'Instrument Serif', serif; font-size: 1rem; }
 
   .bubble {
@@ -592,7 +592,7 @@ async function showDemo(question) {
 }
 
 function startCountdown(url) {
-  let n = 5;
+  let n = 3;
   document.getElementById('countdown').textContent = n;
   clearInterval(countdownTimer);
   countdownTimer = setInterval(() => {
